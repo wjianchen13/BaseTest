@@ -2,6 +2,8 @@ package com.example.test;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,11 +29,14 @@ import com.example.test.lambda.Message1;
  */
 public class LambdaActivity extends AppCompatActivity {
 
+    private Button btnTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lambda);
+        btnTest = findViewById(R.id.btn_test1);
+        btnTest.setOnClickListener(v -> Toast.makeText(this, "test", Toast.LENGTH_SHORT).show());
     }
 
     /**
@@ -56,7 +61,7 @@ public class LambdaActivity extends AppCompatActivity {
         // 直接通过方法来调用
         fun(() -> System.out.println("Hello!"));
         // 直接通过方法来调用， str 为我们传递的参数
-        fun1((str)  -> System.out.println(str));
+        fun1(str  -> System.out.println(str));
 
         fun1((s) -> {
             s = s.toUpperCase();

@@ -32,5 +32,12 @@ public class MainActivity extends AppCompatActivity {
     public void onLambda(View v) {
         startActivity(new Intent(this, LambdaActivity.class));
     }
-    
+
+    /**
+     *
+     * @param v
+     */
+    public void onLevelList(View v) {
+        startActivity(new Intent(this, LevelActivity.class));
+    }
 }

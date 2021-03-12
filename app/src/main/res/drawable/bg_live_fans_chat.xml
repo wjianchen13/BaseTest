@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@color/colorAccent"
+        android:maxLevel="0" />
+    
+    <item
+        android:drawable="@drawable/bg_live_chat_vip"
+        android:maxLevel="1" />
+
+    <item
+        android:drawable="@drawable/bg_live_chat_svip"
+        android:maxLevel="2" />
+
+    <item
+        android:drawable="@drawable/bg_live_chat_dvip"
+        android:maxLevel="3" />
+
+    <item
+        android:drawable="@drawable/bg_live_chat_fans"
+        android:maxLevel="4" />
+
+</level-list>
