@@ -40,4 +40,12 @@ public class MainActivity extends AppCompatActivity {
     public void onLevelList(View v) {
         startActivity(new Intent(this, LevelActivity.class));
     }
+
+    /**
+     * 动态生成drawable
+     * @param v
+     */
+    public void onCreateDrawable(View v) {
+        startActivity(new Intent(this, DrawableActivity.class));
+    }
 }

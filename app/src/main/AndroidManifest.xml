@@ -20,7 +20,7 @@
         <activity android:name=".LambdaActivity" />
         <activity android:name=".TimeActivity" />
         <activity android:name=".LevelActivity" />
-        
+        <activity android:name=".DrawableActivity" />
     </application>
 
 </manifest>
