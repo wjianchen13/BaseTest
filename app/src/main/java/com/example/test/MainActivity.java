@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.test.html.HtmlActivity;
+import com.example.test.imagespan.ImageSpanActivity;
 
 /**
  * 时间统计， selector动态生成
@@ -65,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onHtml(View v) {
         startActivity(new Intent(this, HtmlActivity.class));
+    }
+    
+    /**
+     * ImageSpan测试
+     * @param v
+     */
+    public void onImageSpan(View v) {
+        startActivity(new Intent(this, ImageSpanActivity.class));
     }
     
 }

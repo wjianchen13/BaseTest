@@ -78,6 +78,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_normal_test" />
-    
 
+    <Button
+        android:id="@+id/btn_imagespan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ImageSpan 测试"
+        android:onClick="onImageSpan"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_html" />
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
