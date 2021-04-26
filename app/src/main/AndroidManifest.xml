@@ -21,6 +21,8 @@
         <activity android:name=".TimeActivity" />
         <activity android:name=".LevelActivity" />
         <activity android:name=".DrawableActivity" />
+        <activity android:name=".NormalTestActivity" />
+        <activity android:name=".html.HtmlActivity" />
     </application>
 
 </manifest>

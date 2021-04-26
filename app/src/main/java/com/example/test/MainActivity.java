@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.test.html.HtmlActivity;
+
 /**
  * 时间统计， selector动态生成
  */
@@ -48,4 +50,21 @@ public class MainActivity extends AppCompatActivity {
     public void onCreateDrawable(View v) {
         startActivity(new Intent(this, DrawableActivity.class));
     }
+
+    /**
+     * 普通测试
+     * @param v
+     */
+    public void onNormalTest(View v) {
+        startActivity(new Intent(this, NormalTestActivity.class));
+    }
+
+    /**
+     * Html.fromHtml() 测试
+     * @param v
+     */
+    public void onHtml(View v) {
+        startActivity(new Intent(this, HtmlActivity.class));
+    }
+    
 }
