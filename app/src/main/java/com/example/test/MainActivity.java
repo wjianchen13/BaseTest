@@ -75,5 +75,13 @@ public class MainActivity extends AppCompatActivity {
     public void onImageSpan(View v) {
         startActivity(new Intent(this, ImageSpanActivity.class));
     }
+
+    /**
+     * 屏幕密度测试
+     * @param v
+     */
+    public void onDensity(View v) {
+        startActivity(new Intent(this, DensityActivity.class));
+    }
     
 }

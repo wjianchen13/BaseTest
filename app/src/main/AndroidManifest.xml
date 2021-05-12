@@ -24,6 +24,8 @@
         <activity android:name=".NormalTestActivity" />
         <activity android:name=".html.HtmlActivity" />
         <activity android:name=".imagespan.ImageSpanActivity" />
+        <activity android:name=".DensityActivity" />
+        
     </application>
 
 </manifest>
