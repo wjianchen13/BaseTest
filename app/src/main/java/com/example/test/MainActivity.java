@@ -83,5 +83,13 @@ public class MainActivity extends AppCompatActivity {
     public void onDensity(View v) {
         startActivity(new Intent(this, DensityActivity.class));
     }
+
+    /**
+     * RadioButton测试
+     * @param v
+     */
+    public void onRadioButton(View v) {
+        startActivity(new Intent(this, RadioButtonActivity.class));
+    }
     
 }
