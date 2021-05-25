@@ -3,8 +3,11 @@ package com.example.test;
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
 
 /**
  * 普通测试
@@ -41,6 +44,9 @@ public class NormalTestActivity extends AppCompatActivity {
         wealth.put(2, "222");
 
         wealth.put(2, "333");
+        
+        String str = null;
+        boolean is = null instanceof TextView;
         
     }
     

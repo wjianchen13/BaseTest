@@ -76,4 +76,27 @@ public class LambdaActivity extends AppCompatActivity {
     public static void fun1(Message1 msg) {
         msg.print("使用 lambda 传递参数");	  //使用 lambda 传递参数
     }
+
+    public void onTest2(View v) {
+//        btnTest.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Toast.makeText(LambdaActivity.this, "postDelayed", Toast.LENGTH_SHORT).show();
+//            }
+//        }, 2000);
+
+        btnTest.postDelayed(
+                () -> {
+                    Toast.makeText(LambdaActivity.this, "postDelayed", Toast.LENGTH_SHORT).show();
+                }
+
+        , 2000);
+
+        btnTest.post(
+                () -> 
+                    Toast.makeText(LambdaActivity.this, "postDelayed", Toast.LENGTH_SHORT).show()
+                );
+        
+    }
+    
 }
