@@ -26,7 +26,8 @@
         <activity android:name=".imagespan.ImageSpanActivity" />
         <activity android:name=".DensityActivity" />
         <activity android:name=".RadioButtonActivity" />
-        
+        <activity android:name=".AddLayoutActivity" />
+        <activity android:name=".PopupWindowActivity" />
         
     </application>
 

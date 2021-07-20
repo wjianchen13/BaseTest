@@ -8,3 +8,4 @@
 不用备份，用来测试很常规的问题
 ## 6. Html.fromHtml()测试
 ## 7. ImageSpan测试，主要测试粉丝团徽章含有表情位置不对问题
+## 8.动态添加控件到RelativeLayout中

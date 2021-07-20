@@ -91,5 +91,21 @@ public class MainActivity extends AppCompatActivity {
     public void onRadioButton(View v) {
         startActivity(new Intent(this, RadioButtonActivity.class));
     }
-    
+
+    /**
+     * RelativeLayout动态添加控件
+     * @param v
+     */
+    public void onAddLayout(View v) {
+        startActivity(new Intent(this, AddLayoutActivity.class));
+    }
+
+    /**
+     * RelativeLayout动态添加控件
+     * @param v
+     */
+    public void onPopupWindow(View v) {
+        startActivity(new Intent(this, PopupWindowActivity.class));
+    }
+
 }
