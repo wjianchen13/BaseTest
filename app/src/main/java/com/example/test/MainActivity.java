@@ -108,4 +108,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, PopupWindowActivity.class));
     }
 
+    /**
+     * 多线程锁机制
+     * @param v
+     */
+    public void onLock(View v) {
+        startActivity(new Intent(this, LockActivity.class));
+    }
+    
 }

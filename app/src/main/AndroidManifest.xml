@@ -28,6 +28,8 @@
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".AddLayoutActivity" />
         <activity android:name=".PopupWindowActivity" />
+        <activity android:name=".LockActivity" />
+        
         
     </application>
 
