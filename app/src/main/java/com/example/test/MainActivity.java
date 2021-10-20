@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.test.html.HtmlActivity;
 import com.example.test.imagespan.ImageSpanActivity;
+import com.example.test.loop.LoopActivity;
 
 /**
  * 时间统计， selector动态生成
@@ -114,6 +115,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onLock(View v) {
         startActivity(new Intent(this, LockActivity.class));
+    }
+
+    /**
+     * 循环播放
+     * @param v
+     */
+    public void onLoop(View v) {
+        startActivity(new Intent(this, LoopActivity.class));
     }
     
 }
