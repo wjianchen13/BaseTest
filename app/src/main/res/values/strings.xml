@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Test</string>
     <string name="test">values</string>
+    <string name="dino_test">value</string>
 </resources>
