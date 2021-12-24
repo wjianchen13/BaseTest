@@ -34,7 +34,9 @@
         <activity android:name=".PopupWindowActivity" />
         <activity android:name=".LockActivity" />
         <activity android:name=".loop.LoopActivity" />
-        
+        <activity android:name=".parcelable.ParcelableActivity" />
+        <activity android:name=".parcelable.ParcelableOtherActivity" />
+        <activity android:name=".TouchActivity" />
         
     </application>
 

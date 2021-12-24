@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.test.html.HtmlActivity;
 import com.example.test.imagespan.ImageSpanActivity;
 import com.example.test.loop.LoopActivity;
+import com.example.test.parcelable.ParcelableActivity;
 
 /**
  * 时间统计， selector动态生成
@@ -124,5 +125,20 @@ public class MainActivity extends AppCompatActivity {
     public void onLoop(View v) {
         startActivity(new Intent(this, LoopActivity.class));
     }
-    
+
+    /**
+     * Parcelable 测试
+     * @param v
+     */
+    public void onParcelable(View v) {
+        startActivity(new Intent(this, ParcelableActivity.class));
+    }
+
+    /**
+     * 长按触发事件
+     * @param v
+     */
+    public void onTouch(View v) {
+        startActivity(new Intent(this, TouchActivity.class));
+    }
 }
