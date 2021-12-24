@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.test.choreographer.ChoreographerActivity;
 import com.example.test.html.HtmlActivity;
 import com.example.test.imagespan.ImageSpanActivity;
 import com.example.test.loop.LoopActivity;
@@ -141,4 +142,14 @@ public class MainActivity extends AppCompatActivity {
     public void onTouch(View v) {
         startActivity(new Intent(this, TouchActivity.class));
     }
+
+    /**
+     * Choreographer 测试
+     * @param v
+     */
+    public void onChoreographer(View v) {
+        startActivity(new Intent(this, ChoreographerActivity.class));
+    }
+    
+    
 }
