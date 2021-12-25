@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.test.choreographer.ChoreographerActivity;
 import com.example.test.html.HtmlActivity;
 import com.example.test.imagespan.ImageSpanActivity;
+import com.example.test.layout.LayoutActivity;
 import com.example.test.loop.LoopActivity;
 import com.example.test.parcelable.ParcelableActivity;
 
@@ -150,6 +151,13 @@ public class MainActivity extends AppCompatActivity {
     public void onChoreographer(View v) {
         startActivity(new Intent(this, ChoreographerActivity.class));
     }
-    
+
+    /**
+     * 普通布局测试
+     * @param v
+     */
+    public void onLayout(View v) {
+        startActivity(new Intent(this, LayoutActivity.class));
+    }
     
 }

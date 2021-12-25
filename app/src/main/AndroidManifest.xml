@@ -38,6 +38,8 @@
         <activity android:name=".parcelable.ParcelableOtherActivity" />
         <activity android:name=".TouchActivity" />
         <activity android:name=".choreographer.ChoreographerActivity" />
+        <activity android:name=".layout.LayoutActivity" />
+        
         
     </application>
 
