@@ -16,7 +16,7 @@ import com.example.test.R;
  */
 public class LayoutActivity extends AppCompatActivity {
     
-    private TextView tvTest5;
+    private MyRelativeLayout tvTest5;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {

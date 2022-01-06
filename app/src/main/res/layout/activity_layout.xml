@@ -14,7 +14,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <TextView
+        <com.example.test.layout.MyRelativeLayout
             android:id="@+id/tv_test5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
