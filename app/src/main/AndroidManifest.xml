@@ -39,7 +39,7 @@
         <activity android:name=".TouchActivity" />
         <activity android:name=".choreographer.ChoreographerActivity" />
         <activity android:name=".layout.LayoutActivity" />
-        
+        <activity android:name=".clipchildren.ClipChildrenActivity" />
         
     </application>
 

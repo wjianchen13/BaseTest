@@ -60,7 +60,7 @@ public class ChoreographerActivity extends AppCompatActivity {
                     double fps = (((double) (mFrameCount * 1000L)) / diff);
                     mFrameCount = 0;
                     mLastFrameTime = 0;
-                    System.out.println("============================> doFrame fps: " + fps);
+//                    System.out.println("============================> doFrame fps: " + fps);
                 } else {
                     ++mFrameCount;
                 }
@@ -75,6 +75,7 @@ public class ChoreographerActivity extends AppCompatActivity {
         }
         tvTest.setTranslationX(x);
         x -= 5 ;
+        System.out.println("============================> transView x: " + x);
     }
     
     

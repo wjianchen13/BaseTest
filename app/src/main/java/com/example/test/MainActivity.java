@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.test.choreographer.ChoreographerActivity;
+import com.example.test.clipchildren.ClipChildrenActivity;
 import com.example.test.html.HtmlActivity;
 import com.example.test.imagespan.ImageSpanActivity;
 import com.example.test.layout.LayoutActivity;
@@ -158,6 +159,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onLayout(View v) {
         startActivity(new Intent(this, LayoutActivity.class));
+    }
+
+    /**
+     * 常规测试
+     * @param v
+     */
+    public void onTest1(View v) {
+        startActivity(new Intent(this, ClipChildrenActivity.class));
     }
     
 }

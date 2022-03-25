@@ -2,4 +2,7 @@
     <string name="app_name">Test</string>
     <string name="test">values</string>
     <string name="dino_test">value</string>
+
+    <string name="test1">""</string>
+    
 </resources>
