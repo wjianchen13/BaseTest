@@ -49,8 +49,13 @@ public class ImageSpanActivity extends AppCompatActivity {
      * ImageSpan 测试
      * @param v
      */
-    public void onTest2(View v) { 
-        tvTest1.setText(edtvTest.getText().toString());
+    public void onTest2(View v) {
+        SpannableString fansImageSpan = KiwiiScreenUtils.getTestImageSpan(this
+                , "1"
+                , edtvTest.getText().toString()
+                , KiwiiScreenUtils.dip2px(KiwiiScreenUtils.INTER_IMG_CHAT_NORMAL_HEIGHT), KiwiiScreenUtils.KIWII_ALIGN_CENTER);
+        tvTest1.setText(fansImageSpan);
+        System.out.println("=================> TextView width: " + tvTest1.getWidth() + "   height: " + tvTest1.getHeight());
 
     }
 

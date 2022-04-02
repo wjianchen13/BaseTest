@@ -40,6 +40,7 @@
         <activity android:name=".choreographer.ChoreographerActivity" />
         <activity android:name=".layout.LayoutActivity" />
         <activity android:name=".clipchildren.ClipChildrenActivity" />
+        <activity android:name=".StateActivity" />
         
     </application>
 

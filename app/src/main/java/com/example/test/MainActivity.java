@@ -168,5 +168,13 @@ public class MainActivity extends AppCompatActivity {
     public void onTest1(View v) {
         startActivity(new Intent(this, ClipChildrenActivity.class));
     }
+
+    /**
+     * Button状态同步
+     * @param v
+     */
+    public void onState(View v) {
+        startActivity(new Intent(this, StateActivity.class));
+    }
     
 }

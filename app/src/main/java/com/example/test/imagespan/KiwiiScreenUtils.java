@@ -62,8 +62,20 @@ public class KiwiiScreenUtils {
         }
         return 2.0f;
     }
-    
-    
+
+    /**
+     * 返回粉丝团徽章
+     */
+    public static SpannableString getTestImageSpan(Context context, String sid, String badge, int size, int verticalAlignment) {
+        SpannableString spanStr = null;
+        if (context != null && null != sid && !TextUtils.isEmpty(badge)) {
+            spanStr = new SpannableString("img ");
+            Drawable img = ContextCompat.getDrawable(context, R.drawable.bg_fans_group_badge);
+            ImageSpan fansImageSpan = new TestImageSpan(context, img, sid, badge, verticalAlignment, img.getIntrinsicWidth(), Math.max(size, img.getIntrinsicHeight()));
+            spanStr.setSpan(fansImageSpan, 0, spanStr.length() - 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+        return spanStr == null ? new SpannableString("") : spanStr;
+    }
 
 
 }
