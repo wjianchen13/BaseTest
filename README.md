@@ -7,15 +7,9 @@
 ## 5. 常规的测试
 不用备份，用来测试很常规的问题
 ## 6. Html.fromHtml()测试
-## 7. ImageSpan测试，主要测试粉丝团徽章含有表情位置不对问题
-## 8.动态添加控件到RelativeLayout中
-## 9.添加多线程加锁机制
-## 10.Button状态同步，徽章绘制对齐问题
-
-
-# ImageSpan相关细节
-baseline是基线，在Android中绘制文本都是从baseline处开始的，从baseline往上至至文本最高处的距离称之为ascent(上坡度)，
-baseline至文本最低处的距离称之为descent(下坡度)。
+## 7.动态添加控件到RelativeLayout中
+## 8.添加多线程加锁机制
+## 9.Button状态同步，徽章绘制对齐问题
 
 
 
