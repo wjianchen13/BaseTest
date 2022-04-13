@@ -27,7 +27,6 @@
         <activity android:name=".DrawableActivity" />
         <activity android:name=".NormalTestActivity" />
         <activity android:name=".html.HtmlActivity" />
-        <activity android:name=".imagespan.ImageSpanActivity" />
         <activity android:name=".DensityActivity" />
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".AddLayoutActivity" />
