@@ -8,9 +8,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.test.choreographer.ChoreographerActivity;
 import com.example.test.clipchildren.ClipChildrenActivity;
+import com.example.test.gson.GsonActivity;
 import com.example.test.html.HtmlActivity;
 import com.example.test.layout.LayoutActivity;
 import com.example.test.loop.LoopActivity;
+import com.example.test.member.DoubleActivity;
 import com.example.test.parcelable.ParcelableActivity;
 
 /**
@@ -167,5 +169,32 @@ public class MainActivity extends AppCompatActivity {
     public void onState(View v) {
         startActivity(new Intent(this, StateActivity.class));
     }
+
+    /**
+     * 判断Activity是否在顶层
+     * @param v
+     */
+    public void onTop(View v) {
+        startActivity(new Intent(this, TopActivity.class));
+    }
+
+    /**
+     * 判断Activity是否在顶层
+     * @param v
+     */
+    public void onGson(View v) {
+        startActivity(new Intent(this, GsonActivity.class));
+    }
+
+    /**
+     * 浮点型运算
+     * @param v
+     */
+    public void onDouble(View v) {
+        startActivity(new Intent(this, DoubleActivity.class));
+    }
+
+
+
     
 }

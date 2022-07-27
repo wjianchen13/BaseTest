@@ -40,7 +40,11 @@
         <activity android:name=".layout.LayoutActivity" />
         <activity android:name=".clipchildren.ClipChildrenActivity" />
         <activity android:name=".StateActivity" />
-        
+        <activity android:name=".TopActivity" />
+        <activity android:name=".gson.GsonActivity" />
+        <activity android:name=".member.DoubleActivity" />
+
+
     </application>
 
 </manifest>
