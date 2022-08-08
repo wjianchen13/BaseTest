@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.test.R;
 import com.google.gson.Gson;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Gson测试
  */
@@ -26,6 +29,31 @@ public class GsonActivity extends AppCompatActivity {
         int c = 0;
     }
 
+    public void onTest2(View v) {
+        int d = 5; // 分钟
+        int duration = 5 * 60 * 1000; // ms
 
+        List<Long> times = new ArrayList<>();
+        long current = 1659584151796l;
+        long t1 = 1659583550796l;
+        long t2 = 1659583850796l;
+        times.add(t1);
+        times.add(t2);
+        for(int i = times.size() - 1; i >= 0; i --) {
+            if(current - times.get(i) > duration) {
+                times.remove(i);
+            }
+        }
+        if(times.size() < 2) {
+            times.add(current); // return true
+        }
+//        return false;
+
+
+    }
+
+    public void onTest3(View v) {
+
+    }
 
 }

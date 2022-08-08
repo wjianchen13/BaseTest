@@ -226,7 +226,7 @@
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_layout" />
+            app:layout_constraintTop_toBottomOf="@id/btn_test1" />
 
         <Button
             android:id="@+id/btn_top"
@@ -238,7 +238,7 @@
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_layout" />
+            app:layout_constraintTop_toBottomOf="@id/btn_state" />
 
         <Button
             android:id="@+id/btn_gson"
@@ -250,7 +250,7 @@
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_layout" />
+            app:layout_constraintTop_toBottomOf="@id/btn_top" />
 
 
         <Button
@@ -263,7 +263,7 @@
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_layout" />
+            app:layout_constraintTop_toBottomOf="@id/btn_gson" />
         
     </androidx.constraintlayout.widget.ConstraintLayout>
 
