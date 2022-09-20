@@ -43,6 +43,7 @@
         <activity android:name=".TopActivity" />
         <activity android:name=".gson.GsonActivity" />
         <activity android:name=".member.DoubleActivity" />
+        <activity android:name=".QueueActivity" />
 
 
     </application>

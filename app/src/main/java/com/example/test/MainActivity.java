@@ -194,6 +194,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, DoubleActivity.class));
     }
 
+    /**
+     * Queue测试
+     * @param v
+     */
+    public void onQueue(View v) {
+        startActivity(new Intent(this, QueueActivity.class));
+    }
 
 
     
