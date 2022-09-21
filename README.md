@@ -14,7 +14,7 @@
 ## 11 数值型测试
 ## GsonActivity Gson解析字段不一致是否报错
 ## GsonActivity 测试5分钟插入最多2次的算法，如果在5分钟内，删除较早的一个
-
+## 动态生成drawable
 
 #参考资料
 

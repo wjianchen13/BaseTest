@@ -45,6 +45,7 @@
         <activity android:name=".member.DoubleActivity" />
         <activity android:name=".QueueActivity" />
         <activity android:name=".StringActivity" />
+        <activity android:name=".drawable.CreateDrawableActivity" />
 
     </application>
 

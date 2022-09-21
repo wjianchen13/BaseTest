@@ -2,8 +2,10 @@ package com.example.test;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -12,29 +14,26 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * 时间统计， selector动态生成
+ * RelativeLayout动态添加控件
  */
 public class AddLayoutActivity extends AppCompatActivity {
 
     private Button btnTest;
     private RelativeLayout layout_root_relative;
     private TextView tvTest;
-    
+    private FrameLayout flytFrmae;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_layout);
         layout_root_relative = findViewById(R.id.rlyt_frame);
+        flytFrmae = findViewById(R.id.flyt_frame);
         tvTest = findViewById(R.id.tv_test);
         tvTest.setOnClickListener(v -> {});
-        
-        
-        
     }
     
     public void onTest(View v) {
-//        rlytFrame
         generateSingleLayout(1, "hello");
     }
 
@@ -57,7 +56,23 @@ public class AddLayoutActivity extends AppCompatActivity {
         layout_root_relative.addView(imageView);
 
         return layout_root_relative;
-
     }
+
+    public void onTest1(View v) {
+        for(int i = 0; i < 5; i ++) {
+            addView((i + 1) * 40);
+        }
+    }
+
+    private void addView(int marginLeft) {
+        ImageView imageView = new ImageView(this);
+        FrameLayout.LayoutParams param = new FrameLayout.LayoutParams(60, 60);
+        param.gravity = Gravity.CENTER_VERTICAL;
+        param.leftMargin = marginLeft;
+        imageView.setLayoutParams(param);
+        imageView.setImageResource(R.drawable.ic_launcher_test);
+        flytFrmae.addView(imageView);
+    }
+
 
 }

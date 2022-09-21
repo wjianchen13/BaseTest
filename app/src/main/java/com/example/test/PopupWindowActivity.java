@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * 时间统计， selector动态生成
+ * PopupWindow 测试
  */
 public class PopupWindowActivity extends AppCompatActivity implements View.OnClickListener{
     
