@@ -202,6 +202,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, QueueActivity.class));
     }
 
+    /**
+     * String拼接
+     * @param v
+     */
+    public void onString(View v) {
+        startActivity(new Intent(this, StringActivity.class));
+    }
 
     
 }

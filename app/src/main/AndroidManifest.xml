@@ -44,7 +44,7 @@
         <activity android:name=".gson.GsonActivity" />
         <activity android:name=".member.DoubleActivity" />
         <activity android:name=".QueueActivity" />
-
+        <activity android:name=".StringActivity" />
 
     </application>
 
