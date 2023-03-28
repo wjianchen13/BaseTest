@@ -32,19 +32,20 @@ public class NormalTestActivity extends AppCompatActivity {
     }
 
     public void onTest1(View v) {
-        SpannableString s = new SpannableString("djjjhhuu[em:48][em:42][em:52][em:53]");
-        s.removeSpan("[em:48]");
-        System.out.println("============> s1: " + s);
-        s.removeSpan(new SpannableString("[em:48]"));
-        System.out.println("============> s2: " + s);
-        
-        s.setSpan(new SpannableString(""), 8, 15, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        System.out.println("============> s3: " + s);
-
-//        s.setSpan(new ImageSpan(null), 8, 15, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-//        System.out.println("============> s4: " + s);
-//        s.
-        tvTest.setText(s);
+//        SpannableString s = new SpannableString("djjjhhuu[em:48][em:42][em:52][em:53]");
+//        s.removeSpan("[em:48]");
+//        System.out.println("============> s1: " + s);
+//        s.removeSpan(new SpannableString("[em:48]"));
+//        System.out.println("============> s2: " + s);
+//
+//        s.setSpan(new SpannableString(""), 8, 15, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//        System.out.println("============> s3: " + s);
+//
+////        s.setSpan(new ImageSpan(null), 8, 15, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+////        System.out.println("============> s4: " + s);
+////        s.
+        tvTest.setText("Rs");
+        tvTest.setText("₨");
     }
 
     public void onTest3(View v) {

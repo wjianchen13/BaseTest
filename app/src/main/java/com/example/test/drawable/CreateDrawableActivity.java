@@ -15,12 +15,14 @@ import com.example.test.R;
 public class CreateDrawableActivity extends AppCompatActivity {
 
     private TextView tvTest;
+    private RoundRectTextView tvTest2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_drawable);
         tvTest = findViewById(R.id.tv_test);
+        tvTest2 = findViewById(R.id.tv_test2);
     }
 
     /**
@@ -32,37 +34,21 @@ public class CreateDrawableActivity extends AppCompatActivity {
     }
 
     public void onTest2(View v) {
-        tvTest.getBackground().setLevel(1);
+        tvTest2.initBackground("#ff0000");
+        tvTest2.setText("hello");
     }
 
     public void onTest3(View v) {
-        tvTest.getBackground().setLevel(2);
+        ColorUtils.toRGB("#ff0000");
     }
 
     public void onTest4(View v) {
-        tvTest.getBackground().setLevel(3);
+
     }
 
     public void onTest5(View v) {
-        tvTest.getBackground().setLevel(4);
-        boolean isFans = true;
-        int type = 3;
-        int result = getItemType(isFans, type);
-        System.out.println("=================> result: " + result);
+
     }
 
-    /**
-     * 显示itemtype
-     * @param isFans
-     * @param viptype
-     * @return
-     */
-    private int getItemType(boolean isFans, int viptype) {
-        return isFans ?  5
-                : viptype == 3 ? 3
-                : viptype == 2 ? 2
-                : viptype == 1 ? 1
-                : 0;
-    }
-    
+
 }

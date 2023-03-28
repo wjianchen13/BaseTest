@@ -30,6 +30,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_test" />
+
+    <com.example.test.drawable.RoundRectTextView
+        android:id="@+id/tv_test2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_live_fans_chat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_test1" />
     
     <Button
         android:id="@+id/btn_test2"
@@ -41,7 +53,7 @@
         android:onClick="onTest2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_test1" />
+        app:layout_constraintTop_toBottomOf="@id/tv_test2" />
 
     <Button
         android:id="@+id/btn_test3"
