@@ -11,6 +11,7 @@ import com.example.test.clipchildren.ClipChildrenActivity;
 import com.example.test.drawable.CreateDrawableActivity;
 import com.example.test.gson.GsonActivity;
 import com.example.test.html.HtmlActivity;
+import com.example.test.interfacetest.InterfaceActivity;
 import com.example.test.layout.LayoutActivity;
 import com.example.test.loop.LoopActivity;
 import com.example.test.member.DoubleActivity;
@@ -219,5 +220,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, CreateDrawableActivity.class));
     }
 
+    /**
+     * 接口子类类型判断
+     * @param v
+     */
+    public void onInterface(View v) {
+        startActivity(new Intent(this, InterfaceActivity.class));
+    }
+
+    /**
+     * EditText提示问题
+     * @param v
+     */
+    public void onEditText(View v) {
+        startActivity(new Intent(this, EditTextActivity.class));
+    }
 
 }
