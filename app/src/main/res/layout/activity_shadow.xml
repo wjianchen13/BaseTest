@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false" >
+
+    <ImageView
+        android:id="@+id/edtv_test"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layer_list1"
+        android:src="@drawable/ic_default_icon"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/layer_list"
+        android:layout_below="@id/edtv_test"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:outlineProvider="background"
+        android:shadowColor="#00ffffff"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        android:text="android:shadow 属性"
+        android:textSize="14dp"
+        android:translationZ="5dp" />
+
+
+</RelativeLayout>

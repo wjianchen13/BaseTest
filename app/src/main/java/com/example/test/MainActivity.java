@@ -236,4 +236,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, EditTextActivity.class));
     }
 
+    /**
+     * 添加阴影
+     * @param v
+     */
+    public void onShadow(View v) {
+        startActivity(new Intent(this, ShadowActivity.class));
+    }
+
+    /**
+     * 跑马灯
+     * @param v
+     */
+    public void onMarquee(View v) {
+        startActivity(new Intent(this, MarqueeActivity.class));
+    }
+
 }

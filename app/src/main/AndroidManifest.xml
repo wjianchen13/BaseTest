@@ -48,6 +48,10 @@
         <activity android:name=".drawable.CreateDrawableActivity" />
         <activity android:name=".interfacetest.InterfaceActivity" />
         <activity android:name=".EditTextActivity" />
+        <activity android:name=".ShadowActivity" />
+        <activity android:name=".MarqueeActivity" />
+
+
 
     </application>
 

@@ -321,8 +321,32 @@
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_string" />
-        
+            app:layout_constraintTop_toBottomOf="@id/btn_interface" />
+
+        <Button
+            android:id="@+id/btn_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ImageView添加阴影"
+            android:onClick="onShadow"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_edittext" />
+
+        <Button
+            android:id="@+id/btn_marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TextView跑马灯"
+            android:onClick="onMarquee"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_shadow" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
