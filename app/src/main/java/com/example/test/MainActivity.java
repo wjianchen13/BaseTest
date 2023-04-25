@@ -16,6 +16,7 @@ import com.example.test.layout.LayoutActivity;
 import com.example.test.loop.LoopActivity;
 import com.example.test.member.DoubleActivity;
 import com.example.test.parcelable.ParcelableActivity;
+import com.example.test.testclass.ClassActivity;
 
 /**
  * 时间统计， selector动态生成
@@ -250,6 +251,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onMarquee(View v) {
         startActivity(new Intent(this, MarqueeActivity.class));
+    }
+
+    /**
+     * 跑马灯
+     * @param v
+     */
+    public void onClass(View v) {
+        startActivity(new Intent(this, ClassActivity.class));
     }
 
 }

@@ -44,8 +44,18 @@ public class NormalTestActivity extends AppCompatActivity {
 ////        s.setSpan(new ImageSpan(null), 8, 15, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 ////        System.out.println("============> s4: " + s);
 ////        s.
-        tvTest.setText("Rs");
-        tvTest.setText("₨");
+//        tvTest.setText("Rs");
+//        tvTest.setText("₨");
+        int level = 0;
+        int l = 0;
+        if(level > 0 && level < 10) {
+            l = 1;
+        } else if(level >= 60) {
+            l = 60;
+        } else  {
+            l = level / 10 * 10;
+        }
+        System.out.println("======================================> l: " + l);
     }
 
     public void onTest3(View v) {
