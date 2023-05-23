@@ -2,5 +2,6 @@
 <resources>
 
     <dimen name="dino_test">1dp</dimen>
+    <dimen name="common_dialog_width">300dp</dimen> <!-- dialog宽度 -->
     
 </resources>

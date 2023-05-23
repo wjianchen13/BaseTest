@@ -1,8 +1,8 @@
 package com.example.test;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -22,6 +22,7 @@ public class AddLayoutActivity extends AppCompatActivity {
     private RelativeLayout layout_root_relative;
     private TextView tvTest;
     private FrameLayout flytFrmae;
+    private LinearLayout llytParent;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class AddLayoutActivity extends AppCompatActivity {
         flytFrmae = findViewById(R.id.flyt_frame);
         tvTest = findViewById(R.id.tv_test);
         tvTest.setOnClickListener(v -> {});
+        llytParent = findViewById(R.id.llyt_parent);
     }
     
     public void onTest(View v) {
@@ -72,6 +74,19 @@ public class AddLayoutActivity extends AppCompatActivity {
         imageView.setLayoutParams(param);
         imageView.setImageResource(R.drawable.ic_launcher_test);
         flytFrmae.addView(imageView);
+    }
+
+    /**
+     * 测试动态添加布局设置最小高度
+     * @param v
+     */
+    public void onTest2(View v) {
+        View view = LayoutInflater.from(this).inflate(R.layout.layout_test_add_layout, null);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                getResources().getDimensionPixelSize(R.dimen.common_dialog_width),
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+
+        llytParent.addView(view, params);
     }
 
 
