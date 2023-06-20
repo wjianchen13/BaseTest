@@ -46,25 +46,57 @@ public class NormalTestActivity extends AppCompatActivity {
 ////        s.
 //        tvTest.setText("Rs");
 //        tvTest.setText("₨");
-        int level = 0;
-        int l = 0;
-        if(level > 0 && level < 10) {
-            l = 1;
-        } else if(level >= 60) {
-            l = 60;
-        } else  {
-            l = level / 10 * 10;
+//        int level = 0;
+//        int l = 0;
+//        if(level > 0 && level < 10) {
+//            l = 1;
+//        } else if(level >= 60) {
+//            l = 60;
+//        } else  {
+//            l = level / 10 * 10;
+//        }
+//        System.out.println("======================================> l: " + l);
+
+//        long t1 = 1686621641000l; // 2023-06-13 10:00:41
+//        long time = System.currentTimeMillis();
+//        long dis = time - t1;
+//        if(dis < 86400000) {
+//            System.out.println("======================================> 没超过24小时");
+//        } else {
+//            System.out.println("======================================> 超过24小时: ");
+//        }
+
+        try {
+            JSONObject obj = new JSONObject();
+            obj.put("hello", "test1");
+            obj.put("hello1", 1);
+            String s = obj.toString();
+            JSONObject obj1 = new JSONObject(s);
+            String hello = obj1.optString("hello");
+            int hello1 = obj1.optInt("hello1");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        System.out.println("======================================> l: " + l);
     }
 
-    public void onTest3(View v) {
+    public void onTest2(View v) {
         try {
-            setCDNInfo(new JSONArray("[\n" +
-                    "            \"0:1\",\n" +
-                    "            \"3:2\", \n" +
-                    "            \"5:2\"\n" +
-                    "        ]"));
+            JSONObject obj = new JSONObject("{\n" +
+                    "    \"code\": 200,\n" +
+                    "    \"data\": {\n" +
+                    "        \"uid\": 310011613,\n" +
+                    "        \"goldNum\": 12737,\n" +
+                    "        \"chargeGoldNum\": 12737,\n" +
+                    "        \"nobleGoldNum\": 0,\n" +
+                    "        \"diamondNum\": 12137.0,\n" +
+                    "        \"depositNum\": 0\n" +
+                    "    },\n" +
+                    "    \"message\": \"Success\"\n" +
+                    "}\n");
+            JSONObject data = obj.optJSONObject("data");
+            data.put("uid", "123");
+            int uid = obj.optJSONObject("data").optInt("uid");
+            int goldNum = obj.optJSONObject("data").optInt("goldNum");
         } catch (Exception e) {
             
         }
@@ -106,7 +138,7 @@ public class NormalTestActivity extends AppCompatActivity {
      * 
      * @param v
      */
-    public void onTest2(View v) {
+    public void onTest3(View v) {
 //        StringBuilder sb = new StringBuilder("111");
 //        sb.append("222");
 //        String c = sb + "";
