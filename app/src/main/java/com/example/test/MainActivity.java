@@ -16,6 +16,7 @@ import com.example.test.layout.LayoutActivity;
 import com.example.test.loop.LoopActivity;
 import com.example.test.member.DoubleActivity;
 import com.example.test.parcelable.ParcelableActivity;
+import com.example.test.reduce.ReduceActivity;
 import com.example.test.testclass.ClassActivity;
 
 /**
@@ -254,11 +255,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 跑马灯
+     * Class测试
      * @param v
      */
     public void onClass(View v) {
         startActivity(new Intent(this, ClassActivity.class));
     }
+
+    /**
+     * 减小控件点击区域
+     * @param v
+     */
+    public void onReduce(View v) {
+        startActivity(new Intent(this, ReduceActivity.class));
+    }
+
+
 
 }

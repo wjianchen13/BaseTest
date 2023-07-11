@@ -65,17 +65,81 @@ public class NormalTestActivity extends AppCompatActivity {
 //        } else {
 //            System.out.println("======================================> 超过24小时: ");
 //        }
+//
+//        try {
+//            JSONObject obj = new JSONObject();
+//            obj.put("hello", "test1");
+//            obj.put("hello1", 1);
+//            String s = obj.toString();
+//            JSONObject obj1 = new JSONObject(s);
+//            String hello = obj1.optString("hello");
+//            int hello1 = obj1.optInt("hello1");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
-        try {
-            JSONObject obj = new JSONObject();
-            obj.put("hello", "test1");
-            obj.put("hello1", 1);
-            String s = obj.toString();
-            JSONObject obj1 = new JSONObject(s);
-            String hello = obj1.optString("hello");
-            int hello1 = obj1.optInt("hello1");
-        } catch (Exception e) {
-            e.printStackTrace();
+        String v1 = "1.1.2";
+        String v2 = "1.1.3";
+        String v3 = "1.1";
+        String v4 = "1.2.1";
+        String v5 = "1.1.2.1";
+        String v6 = "";
+        String v7 = "0";
+        int a1 = compareVersion(v1, v2); // 1
+        int a2 = compareVersion(v2, v3); // -1
+        int a3 = compareVersion(v3, v4); // 1
+        int a4 = compareVersion(v4, v5); // -1
+        int a5 = compareVersion(v1, v5); // 1
+        int a6 =  compareVersion(v1, v1); // 0
+        int a7 =  compareVersion(v6, v7); // 0
+        System.out.println("==================> a1: " + a1 + "  a2: " + a2 + "  a3: " + a3 + "  a4: " + a4 + "  a5: " + a5 + "  a6: " + a6 + "  a7: " + a7);
+    }
+
+
+    /**
+     * 版本号比较
+     *
+     * @param v2
+     * @param v1
+     * @return 0代表相等，1代表右边大，-1代表左边大
+     * Utils.compareVersion("1.0.358_20180820090554","1.0.358_20180820090553")=1
+     */
+    private static int compareVersion(String v1, String v2) {
+        if(TextUtils.isEmpty(v1)) {
+            v1 = "0";
+        }
+        if(TextUtils.isEmpty(v2)) {
+            v2 = "0";
+        }
+        if (v2.equals(v1)) {
+            return 0;
+        }
+        String[] version1Array = v2.split("[._]");
+        String[] version2Array = v1.split("[._]");
+        int index = 0;
+        int minLen = Math.min(version1Array.length, version2Array.length);
+        long diff = 0;
+
+        while (index < minLen
+                && (diff = Long.parseLong(version1Array[index])
+                - Long.parseLong(version2Array[index])) == 0) {
+            index++;
+        }
+        if (diff == 0) {
+            for (int i = index; i < version1Array.length; i++) {
+                if (Long.parseLong(version1Array[i]) > 0) {
+                    return 1;
+                }
+            }
+
+            for (int i = index; i < version2Array.length; i++) {
+                if (Long.parseLong(version2Array[i]) > 0) {
+                    return -1;
+                }
+            }
+            return 0;
+        } else {
+            return diff > 0 ? 1 : -1;
         }
     }
 

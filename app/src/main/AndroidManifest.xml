@@ -51,7 +51,7 @@
         <activity android:name=".ShadowActivity" />
         <activity android:name=".MarqueeActivity" />
         <activity android:name=".testclass.ClassActivity" />
-
+        <activity android:name=".reduce.ReduceActivity" />
 
     </application>
 
