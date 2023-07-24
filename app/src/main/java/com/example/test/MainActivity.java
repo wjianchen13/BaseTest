@@ -16,6 +16,7 @@ import com.example.test.layout.LayoutActivity;
 import com.example.test.loop.LoopActivity;
 import com.example.test.member.DoubleActivity;
 import com.example.test.parcelable.ParcelableActivity;
+import com.example.test.permission.PermissionActivity;
 import com.example.test.reduce.ReduceActivity;
 import com.example.test.testclass.ClassActivity;
 
@@ -270,6 +271,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, ReduceActivity.class));
     }
 
-
+    /**
+     * 跳转到权限设置页面
+     * @param v
+     */
+    public void onPermission(View v) {
+        startActivity(new Intent(this, PermissionActivity.class));
+    }
 
 }

@@ -371,7 +371,17 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_class" />
 
-
+        <Button
+            android:id="@+id/onPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="跳转到权限设置页面"
+            android:onClick="onPermission"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_reduce" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

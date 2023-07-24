@@ -78,22 +78,46 @@ public class NormalTestActivity extends AppCompatActivity {
 //            e.printStackTrace();
 //        }
 
-        String v1 = "1.1.2";
-        String v2 = "1.1.3";
-        String v3 = "1.1";
-        String v4 = "1.2.1";
-        String v5 = "1.1.2.1";
-        String v6 = "";
-        String v7 = "0";
-        int a1 = compareVersion(v1, v2); // 1
-        int a2 = compareVersion(v2, v3); // -1
-        int a3 = compareVersion(v3, v4); // 1
-        int a4 = compareVersion(v4, v5); // -1
-        int a5 = compareVersion(v1, v5); // 1
-        int a6 =  compareVersion(v1, v1); // 0
-        int a7 =  compareVersion(v6, v7); // 0
-        System.out.println("==================> a1: " + a1 + "  a2: " + a2 + "  a3: " + a3 + "  a4: " + a4 + "  a5: " + a5 + "  a6: " + a6 + "  a7: " + a7);
+//        String v1 = "1.1.2";
+//        String v2 = "1.1.3";
+//        String v3 = "1.1";
+//        String v4 = "1.2.1";
+//        String v5 = "1.1.2.1";
+//        String v6 = "";
+//        String v7 = "0";
+//        int a1 = compareVersion(v1, v2); // 1
+//        int a2 = compareVersion(v2, v3); // -1
+//        int a3 = compareVersion(v3, v4); // 1
+//        int a4 = compareVersion(v4, v5); // -1
+//        int a5 = compareVersion(v1, v5); // 1
+//        int a6 =  compareVersion(v1, v1); // 0
+//        int a7 =  compareVersion(v6, v7); // 0
+//        System.out.println("==================> a1: " + a1 + "  a2: " + a2 + "  a3: " + a3 + "  a4: " + a4 + "  a5: " + a5 + "  a6: " + a6 + "  a7: " + a7);
+
+//        String url = "https://bobilive-com-test.oss-accelerate.aliyuncs.com/game-packages/common/slots/1.1.3/web-mobile.zip";
+//        if(!TextUtils.isEmpty(url)) {
+//            int start = url.lastIndexOf("/") + 1;
+//            int end = url.lastIndexOf(".");
+//            if(end > start) {
+//                String name = url.substring(start, end);
+//                System.out.println("==================> name:" + name);
+//            }
+//        }
+
+        try {
+            length = length + 20 * 1024 * 1024;
+            test = new String[length];
+            System.out.println("======================> test: ");
+        }catch (Exception e) {
+            System.out.println("======================> e: " + e.getMessage());
+        } catch (OutOfMemoryError error) {
+            System.out.println("======================> error: " + error.getMessage());
+        }
+
     }
+
+    String [] test;
+    private int length = 0;
 
 
     /**
