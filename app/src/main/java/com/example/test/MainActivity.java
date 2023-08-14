@@ -18,6 +18,7 @@ import com.example.test.member.DoubleActivity;
 import com.example.test.parcelable.ParcelableActivity;
 import com.example.test.permission.PermissionActivity;
 import com.example.test.reduce.ReduceActivity;
+import com.example.test.regular.RegularActivity;
 import com.example.test.testclass.ClassActivity;
 
 /**
@@ -278,5 +279,14 @@ public class MainActivity extends AppCompatActivity {
     public void onPermission(View v) {
         startActivity(new Intent(this, PermissionActivity.class));
     }
+
+    /**
+     * 正则表达式
+     * @param v
+     */
+    public void onRegular(View v) {
+        startActivity(new Intent(this, RegularActivity.class));
+    }
+
 
 }
