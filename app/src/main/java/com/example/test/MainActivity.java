@@ -288,5 +288,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, RegularActivity.class));
     }
 
+    /**
+     * TextView
+     * @param v
+     */
+    public void onTextView(View v) {
+        startActivity(new Intent(this, TextViewActivity.class));
+    }
 
 }

@@ -2,6 +2,7 @@ package com.example.test.regular;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,17 +23,20 @@ import java.util.regex.Pattern;
 public class RegularActivity extends AppCompatActivity {
     
     private TextView tvTest;
+    private EditText edtvTest;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regular);
         tvTest = findViewById(R.id.tv_test);
+        edtvTest = findViewById(R.id.edtv_test);
         
     }
 
     public void onTest1(View v) {
-       String content = "😃";
+//       String content = "😃";
+        String content = "🥰";
        String binary = stringToBinary(content);
        String hex = stringToHex(content);
         System.out.println("==================> binary: " + binary);
@@ -86,7 +90,10 @@ public class RegularActivity extends AppCompatActivity {
     }
 
     public void onTest2(View v) {
-
+        String str = edtvTest.getText().toString();
+        str = "\n";
+        String hex = stringToHex(str);
+        System.out.println("==================> hex: " + hex);
     }
     
 }

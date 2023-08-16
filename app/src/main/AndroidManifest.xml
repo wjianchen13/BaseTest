@@ -58,7 +58,7 @@
         <activity android:name=".reduce.ReduceActivity" />
         <activity android:name=".permission.PermissionActivity" />
         <activity android:name=".regular.RegularActivity" />
-
+        <activity android:name=".TextViewActivity" />
 
     </application>
 
