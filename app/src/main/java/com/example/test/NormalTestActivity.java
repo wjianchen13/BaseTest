@@ -15,6 +15,11 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * 普通测试
  * 全局符号静态变量符号$&改成%!（可提交）
@@ -175,7 +180,7 @@ public class NormalTestActivity extends AppCompatActivity {
         }
     }
 
-    public void onTest2(View v) {
+    public void onTest3(View v) {
         try {
             JSONObject obj = new JSONObject("{\n" +
                     "    \"code\": 200,\n" +
@@ -234,7 +239,7 @@ public class NormalTestActivity extends AppCompatActivity {
      * 
      * @param v
      */
-    public void onTest3(View v) {
+    public void onTest2(View v) {
 //        StringBuilder sb = new StringBuilder("111");
 //        sb.append("222");
 //        String c = sb + "";
@@ -259,9 +264,43 @@ public class NormalTestActivity extends AppCompatActivity {
 
 
 
+        // 待匹配字符串
+//        String str = "₹290.00";
+//        String str = "2,290.00";
+//        //	正则表达式
+//        Pattern pattern = Pattern.compile("[0-9]");
+//        Matcher matcher = pattern.matcher(str);
+//        //	判断字符串中是否包含数字
+//        if(matcher.find()){
+//            //	获取数字起始位置
+//            String real = str.substring(matcher.start());
+//            System.out.println("======================> real: " + real);
+//            double value = convertToDouble(real);
+//            System.out.println("======================> value: " + value);
+//        }
 
+        long price = 291800000;
+        double realPrice = (double) price / 1000000;
 
-        
+        System.out.println("======================> realPrice: " + realPrice);
+
+    }
+
+    /**
+     * 把字符串转成double，如果有千分号，去掉千分号
+     */
+    private double convertToDouble(String str) {
+        try {
+            if (!TextUtils.isEmpty(str)) {
+                DecimalFormat df = (DecimalFormat) NumberFormat.getInstance();
+                df.setGroupingUsed(true);
+                double result = df.parse(str).doubleValue();
+                return result;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0.0;
     }
 
     public static void quickSort(int []arr,int low,int high) {
