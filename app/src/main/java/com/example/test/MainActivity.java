@@ -20,6 +20,7 @@ import com.example.test.permission.PermissionActivity;
 import com.example.test.reduce.ReduceActivity;
 import com.example.test.regular.RegularActivity;
 import com.example.test.testclass.ClassActivity;
+import com.example.test.vertical.VerticalTestActivity;
 
 /**
  * 时间统计， selector动态生成
@@ -295,5 +296,14 @@ public class MainActivity extends AppCompatActivity {
     public void onTextView(View v) {
         startActivity(new Intent(this, TextViewActivity.class));
     }
+
+    /**
+     * 垂直显示TextView中间内容
+     * @param v
+     */
+    public void onVerticalTest(View v) {
+        startActivity(new Intent(this, VerticalTestActivity.class));
+    }
+
 
 }

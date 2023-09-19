@@ -59,6 +59,7 @@
         <activity android:name=".permission.PermissionActivity" />
         <activity android:name=".regular.RegularActivity" />
         <activity android:name=".TextViewActivity" />
+        <activity android:name=".vertical.VerticalTestActivity" />
 
     </application>
 

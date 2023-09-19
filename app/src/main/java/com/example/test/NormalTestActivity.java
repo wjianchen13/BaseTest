@@ -11,12 +11,19 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.test.uitls.CommonGsonUtils;
+import com.google.gson.reflect.TypeToken;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
+import java.lang.reflect.Type;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -279,11 +286,23 @@ public class NormalTestActivity extends AppCompatActivity {
 //            System.out.println("======================> value: " + value);
 //        }
 
-        long price = 291800000;
-        double realPrice = (double) price / 1000000;
+//        long price = 291800000;
+//        double realPrice = (double) price / 1000000;
+//
+//        System.out.println("======================> realPrice: " + realPrice);
 
-        System.out.println("======================> realPrice: " + realPrice);
-
+        Map<String, Object> map = new HashMap<>();
+        map.put("skiptype", 1);
+        map.put("name", "charge");
+        Map<String, Object> map1 = new HashMap<>();
+        map1.put("key1", 1);
+        map1.put("key2", "hello");
+        map.put("map", map1);
+        String str = CommonGsonUtils.toJson(map);
+        System.out.println("======================> str: " + str);
+        Type type = new TypeToken<Map<String, Object>>() {}.getType();
+        Map<String, Object> map2 = CommonGsonUtils.fromJson(str, new TypeToken<Map<String, Object>>(){});
+        System.out.println("======================> map2: " + map2);
     }
 
     /**
