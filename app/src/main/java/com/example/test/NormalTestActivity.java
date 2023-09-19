@@ -21,8 +21,10 @@ import org.w3c.dom.Text;
 import java.lang.reflect.Type;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -126,13 +128,39 @@ public class NormalTestActivity extends AppCompatActivity {
 //            System.out.println("======================> error: " + error.getMessage());
 //        }
 
-        int arr[] = new int[]{1, 3, 10, 8, 6, 2, 5, 7, 9, 4};
-//        for(int i = 0; i < arr.length; i ++) {
-//            arr[i]=(int) (Math.random()*100);
-//        }
-        System.out.println("排序前的数组：");
-        quickSort(arr, 0, arr.length-1);
-        System.out.println("排序后的数组：");
+//        int arr[] = new int[]{1, 3, 10, 8, 6, 2, 5, 7, 9, 4};
+////        for(int i = 0; i < arr.length; i ++) {
+////            arr[i]=(int) (Math.random()*100);
+////        }
+//        System.out.println("排序前的数组：");
+//        quickSort(arr, 0, arr.length-1);
+//        System.out.println("排序后的数组：");
+
+        // 测试动态数组
+        List<String> mPlayerListMusicInfos = new ArrayList<>();
+        String mCurrent = "";
+        String real;
+        String real1 = "";
+        if(mPlayerListMusicInfos == null || mPlayerListMusicInfos.size() == 0) {
+            real1 = "-3";
+        }
+        if (mCurrent == null) {
+            if (mPlayerListMusicInfos.size() > 0) {
+                real = mPlayerListMusicInfos.get(0);
+            } else {
+                real = "-3";
+            }
+        } else {
+            int index = mPlayerListMusicInfos.indexOf(mCurrent);
+            if (index == mPlayerListMusicInfos.size() - 1) {
+                index = 0;
+            } else {
+                index += 1;
+            }
+            real = mPlayerListMusicInfos.get(index);
+        }
+        String b = real1;
+        System.out.println("====================> real: " + real);
 
     }
 
