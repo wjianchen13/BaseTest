@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.test.choreographer.ChoreographerActivity;
 import com.example.test.clipchildren.ClipChildrenActivity;
 import com.example.test.drawable.CreateDrawableActivity;
+import com.example.test.exception.ExceptionActivity;
 import com.example.test.gson.GsonActivity;
 import com.example.test.html.HtmlActivity;
 import com.example.test.interfacetest.InterfaceActivity;
@@ -305,5 +306,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, VerticalTestActivity.class));
     }
 
+    /**
+     * 异常模拟
+     * @param v
+     */
+    public void onException(View v) {
+        startActivity(new Intent(this, ExceptionActivity.class));
+    }
 
 }

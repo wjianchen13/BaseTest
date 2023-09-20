@@ -1,4 +1,4 @@
-package com.example.test.vertical;
+package com.example.test.exception;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,18 +6,19 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.test.R;
+import com.example.test.vertical.MarqueeTextView;
 
 /**
- * 居中显示Text测试，失败
+ * 异常模拟
  */
-public class VerticalTestActivity extends AppCompatActivity {
+public class ExceptionActivity extends AppCompatActivity {
     
     private MarqueeTextView tvTest;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vertical_test);
+        setContentView(R.layout.activity_exception);
         tvTest = findViewById(R.id.tv_test);
         
     }
