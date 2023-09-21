@@ -61,6 +61,9 @@
         <activity android:name=".TextViewActivity" />
         <activity android:name=".vertical.VerticalTestActivity" />
         <activity android:name=".exception.ExceptionActivity" />
+        <activity android:name=".half.HalfActivity" />
+        <activity android:name=".half.DialogActivity"
+            android:theme="@style/bottom_activity_bg_style"/>
 
     </application>
 

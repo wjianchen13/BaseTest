@@ -11,6 +11,7 @@ import com.example.test.clipchildren.ClipChildrenActivity;
 import com.example.test.drawable.CreateDrawableActivity;
 import com.example.test.exception.ExceptionActivity;
 import com.example.test.gson.GsonActivity;
+import com.example.test.half.HalfActivity;
 import com.example.test.html.HtmlActivity;
 import com.example.test.interfacetest.InterfaceActivity;
 import com.example.test.layout.LayoutActivity;
@@ -312,6 +313,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onException(View v) {
         startActivity(new Intent(this, ExceptionActivity.class));
+    }
+
+    /**
+     * 半屏Activity
+     * @param v
+     */
+    public void onHalf(View v) {
+        startActivity(new Intent(this, HalfActivity.class));
     }
 
 }
