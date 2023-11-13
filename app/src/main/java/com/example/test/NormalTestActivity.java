@@ -319,18 +319,41 @@ public class NormalTestActivity extends AppCompatActivity {
 //
 //        System.out.println("======================> realPrice: " + realPrice);
 
-        Map<String, Object> map = new HashMap<>();
-        map.put("skiptype", 1);
-        map.put("name", "charge");
-        Map<String, Object> map1 = new HashMap<>();
-        map1.put("key1", 1);
-        map1.put("key2", "hello");
-        map.put("map", map1);
-        String str = CommonGsonUtils.toJson(map);
-        System.out.println("======================> str: " + str);
-        Type type = new TypeToken<Map<String, Object>>() {}.getType();
-        Map<String, Object> map2 = CommonGsonUtils.fromJson(str, new TypeToken<Map<String, Object>>(){});
-        System.out.println("======================> map2: " + map2);
+//        Map<String, Object> map = new HashMap<>();
+//        map.put("skiptype", 1);
+//        map.put("name", "charge");
+//        Map<String, Object> map1 = new HashMap<>();
+//        map1.put("key1", 1);
+//        map1.put("key2", "hello");
+//        map.put("map", map1);
+//        String str = CommonGsonUtils.toJson(map);
+//        System.out.println("======================> str: " + str);
+//        Type type = new TypeToken<Map<String, Object>>() {}.getType();
+//        Map<String, Object> map2 = CommonGsonUtils.fromJson(str, new TypeToken<Map<String, Object>>(){});
+//        System.out.println("======================> map2: " + map2);
+
+//        String url = "https://img. ayomet.com/upload/entrance_float/animation/2923-10-11/10f461e9459f2981287ebb4367566e3b.svga?imageslin";
+//        String name = getFileName(url);
+//        System.out.println("======================> name: " + name);
+
+
+
+        System.out.println("======================> time: " + (System.currentTimeMillis() - time));
+        time = System.currentTimeMillis();
+    }
+    private long time;
+
+    /**
+     * 获取文件名
+     * @return
+     */
+    public static String getFileName(String url) {
+        if(TextUtils.isEmpty(url)) {
+            return url;
+        }
+        if(url.contains("?imageslin"))
+            url = url.replace("?imageslin", "");
+        return url.substring(url.lastIndexOf("/") + 1);
     }
 
     /**
