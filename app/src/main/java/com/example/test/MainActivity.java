@@ -323,4 +323,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, HalfActivity.class));
     }
 
+    /**
+     * 测试当天是否有操作
+     * @param v
+     */
+    public void onDay(View v) {
+        startActivity(new Intent(this, CurrentDayActivity.class));
+    }
 }
