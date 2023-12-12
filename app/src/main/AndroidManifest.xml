@@ -65,7 +65,7 @@
         <activity android:name=".half.DialogActivity"
             android:theme="@style/bottom_activity_bg_style"/>
         <activity android:name=".CurrentDayActivity" />
-
+        <activity android:name=".level.ViewLevelActivity" />
 
     </application>
 

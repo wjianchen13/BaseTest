@@ -15,6 +15,7 @@ import com.example.test.half.HalfActivity;
 import com.example.test.html.HtmlActivity;
 import com.example.test.interfacetest.InterfaceActivity;
 import com.example.test.layout.LayoutActivity;
+import com.example.test.level.ViewLevelActivity;
 import com.example.test.loop.LoopActivity;
 import com.example.test.member.DoubleActivity;
 import com.example.test.parcelable.ParcelableActivity;
@@ -330,4 +331,13 @@ public class MainActivity extends AppCompatActivity {
     public void onDay(View v) {
         startActivity(new Intent(this, CurrentDayActivity.class));
     }
+
+    /**
+     * 改变View的层级
+     * @param v
+     */
+    public void onLevel(View v) {
+        startActivity(new Intent(this, ViewLevelActivity.class));
+    }
+
 }
