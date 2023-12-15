@@ -66,6 +66,7 @@
             android:theme="@style/bottom_activity_bg_style"/>
         <activity android:name=".CurrentDayActivity" />
         <activity android:name=".level.ViewLevelActivity" />
+        <activity android:name=".ViewStubActivity" />
 
     </application>
 

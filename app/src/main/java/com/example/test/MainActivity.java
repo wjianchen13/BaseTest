@@ -340,4 +340,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, ViewLevelActivity.class));
     }
 
+    /**
+     * ViewStub判断
+     * @param v
+     */
+    public void onViewStub(View v) {
+        startActivity(new Intent(this, ViewStubActivity.class));
+    }
+
 }
