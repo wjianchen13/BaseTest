@@ -67,6 +67,7 @@
         <activity android:name=".CurrentDayActivity" />
         <activity android:name=".level.ViewLevelActivity" />
         <activity android:name=".ViewStubActivity" />
+        <activity android:name=".UrlActivity" />
 
     </application>
 

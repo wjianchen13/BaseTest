@@ -480,6 +480,18 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_level" />
 
+        <Button
+            android:id="@+id/btn_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="url替换操作"
+            android:onClick="onUrl"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_viewstub" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

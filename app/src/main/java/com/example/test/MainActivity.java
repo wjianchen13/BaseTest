@@ -348,4 +348,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, ViewStubActivity.class));
     }
 
+    /**
+     * url替换操作
+     * @param v
+     */
+    public void onUrl(View v) {
+        startActivity(new Intent(this, UrlActivity.class));
+    }
+
 }
