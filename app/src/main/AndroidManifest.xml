@@ -68,6 +68,8 @@
         <activity android:name=".level.ViewLevelActivity" />
         <activity android:name=".ViewStubActivity" />
         <activity android:name=".UrlActivity" />
+        <activity android:name=".zip.ZipActivity" />
+
 
     </application>
 

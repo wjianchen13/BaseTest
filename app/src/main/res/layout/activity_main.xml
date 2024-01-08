@@ -492,6 +492,18 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_viewstub" />
 
+        <Button
+            android:id="@+id/btn_zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="zip 压缩"
+            android:onClick="onZip"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_url" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

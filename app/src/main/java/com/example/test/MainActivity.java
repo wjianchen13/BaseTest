@@ -24,6 +24,7 @@ import com.example.test.reduce.ReduceActivity;
 import com.example.test.regular.RegularActivity;
 import com.example.test.testclass.ClassActivity;
 import com.example.test.vertical.VerticalTestActivity;
+import com.example.test.zip.ZipActivity;
 
 /**
  * 时间统计， selector动态生成
@@ -354,6 +355,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onUrl(View v) {
         startActivity(new Intent(this, UrlActivity.class));
+    }
+
+    /**
+     * zip 压缩
+     * @param v
+     */
+    public void onZip(View v) {
+        startActivity(new Intent(this, ZipActivity.class));
     }
 
 }
