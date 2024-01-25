@@ -69,6 +69,7 @@
         <activity android:name=".ViewStubActivity" />
         <activity android:name=".UrlActivity" />
         <activity android:name=".zip.ZipActivity" />
+        <activity android:name=".RingActivity" />
 
 
     </application>

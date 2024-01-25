@@ -365,4 +365,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, ZipActivity.class));
     }
 
+    /**
+     * 渐变圆环
+     * @param v
+     */
+    public void onRing(View v) {
+        startActivity(new Intent(this, RingActivity.class));
+    }
+
 }
