@@ -373,4 +373,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, RingActivity.class));
     }
 
+    /**
+     * Drawable镜像
+     * @param v
+     */
+    public void onMirror(View v) {
+        startActivity(new Intent(this, MirrorActivity.class));
+    }
+
+
 }

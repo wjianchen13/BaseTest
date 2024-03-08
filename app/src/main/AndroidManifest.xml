@@ -70,7 +70,7 @@
         <activity android:name=".UrlActivity" />
         <activity android:name=".zip.ZipActivity" />
         <activity android:name=".RingActivity" />
-
+        <activity android:name=".MirrorActivity" />
 
     </application>
 
