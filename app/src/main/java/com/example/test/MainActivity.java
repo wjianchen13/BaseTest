@@ -1,5 +1,6 @@
 package com.example.test;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,7 @@ import com.example.test.reduce.ReduceActivity;
 import com.example.test.regular.RegularActivity;
 import com.example.test.testclass.ClassActivity;
 import com.example.test.vertical.VerticalTestActivity;
+import com.example.test.wrap.WrapActivity;
 import com.example.test.zip.ZipActivity;
 
 /**
@@ -381,5 +383,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, MirrorActivity.class));
     }
 
+    /**
+     * 自适应布局测试
+     * @param v
+     */
+    public void onWrap(View v) {
+        startActivity(new Intent(this, WrapActivity.class));
+    }
 
 }

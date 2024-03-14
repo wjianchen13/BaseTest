@@ -528,6 +528,18 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_ring" />
 
+        <Button
+            android:id="@+id/btn_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="自适应布局测试"
+            android:onClick="onWrap"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_mirror" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

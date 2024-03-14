@@ -71,6 +71,7 @@
         <activity android:name=".zip.ZipActivity" />
         <activity android:name=".RingActivity" />
         <activity android:name=".MirrorActivity" />
+        <activity android:name=".wrap.WrapActivity" />
 
     </application>
 
