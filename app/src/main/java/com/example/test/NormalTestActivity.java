@@ -1,5 +1,6 @@
 package com.example.test;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -46,6 +47,11 @@ public class NormalTestActivity extends AppCompatActivity {
     }
 
     public void onTest1(View v) {
+        // 240321 字符串转颜色
+        tvTest.setBackgroundColor(Color.parseColor("#0000ff"));
+
+
+
 //        SpannableString s = new SpannableString("djjjhhuu[em:48][em:42][em:52][em:53]");
 //        s.removeSpan("[em:48]");
 //        System.out.println("============> s1: " + s);
@@ -137,30 +143,30 @@ public class NormalTestActivity extends AppCompatActivity {
 //        System.out.println("排序后的数组：");
 
         // 测试动态数组
-        List<String> mPlayerListMusicInfos = new ArrayList<>();
-        String mCurrent = "";
-        String real;
-        String real1 = "";
-        if(mPlayerListMusicInfos == null || mPlayerListMusicInfos.size() == 0) {
-            real1 = "-3";
-        }
-        if (mCurrent == null) {
-            if (mPlayerListMusicInfos.size() > 0) {
-                real = mPlayerListMusicInfos.get(0);
-            } else {
-                real = "-3";
-            }
-        } else {
-            int index = mPlayerListMusicInfos.indexOf(mCurrent);
-            if (index == mPlayerListMusicInfos.size() - 1) {
-                index = 0;
-            } else {
-                index += 1;
-            }
-            real = mPlayerListMusicInfos.get(index);
-        }
-        String b = real1;
-        System.out.println("====================> real: " + real);
+//        List<String> mPlayerListMusicInfos = new ArrayList<>();
+//        String mCurrent = "";
+//        String real;
+//        String real1 = "";
+//        if(mPlayerListMusicInfos == null || mPlayerListMusicInfos.size() == 0) {
+//            real1 = "-3";
+//        }
+//        if (mCurrent == null) {
+//            if (mPlayerListMusicInfos.size() > 0) {
+//                real = mPlayerListMusicInfos.get(0);
+//            } else {
+//                real = "-3";
+//            }
+//        } else {
+//            int index = mPlayerListMusicInfos.indexOf(mCurrent);
+//            if (index == mPlayerListMusicInfos.size() - 1) {
+//                index = 0;
+//            } else {
+//                index += 1;
+//            }
+//            real = mPlayerListMusicInfos.get(index);
+//        }
+//        String b = real1;
+//        System.out.println("====================> real: " + real);
 
     }
 
