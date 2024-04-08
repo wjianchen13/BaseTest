@@ -72,6 +72,8 @@
         <activity android:name=".RingActivity" />
         <activity android:name=".MirrorActivity" />
         <activity android:name=".wrap.WrapActivity" />
+        <activity android:name=".stackoverflowerror.StackOverflowErrorActivity" />
+
 
     </application>
 

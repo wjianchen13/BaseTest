@@ -23,6 +23,7 @@ import com.example.test.parcelable.ParcelableActivity;
 import com.example.test.permission.PermissionActivity;
 import com.example.test.reduce.ReduceActivity;
 import com.example.test.regular.RegularActivity;
+import com.example.test.stackoverflowerror.StackOverflowErrorActivity;
 import com.example.test.testclass.ClassActivity;
 import com.example.test.vertical.VerticalTestActivity;
 import com.example.test.wrap.WrapActivity;
@@ -389,6 +390,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onWrap(View v) {
         startActivity(new Intent(this, WrapActivity.class));
+    }
+
+    /**
+     * StackOverflowError 测试
+     * @param v
+     */
+    public void onStackOverflowError(View v) {
+        startActivity(new Intent(this, StackOverflowErrorActivity.class));
     }
 
 }

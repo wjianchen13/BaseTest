@@ -540,6 +540,19 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_mirror" />
 
+
+        <Button
+            android:id="@+id/btn_stackoverflowerror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="StackOverflowError 测试"
+            android:onClick="onStackOverflowError"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_wrap" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
