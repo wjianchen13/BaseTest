@@ -73,7 +73,7 @@
         <activity android:name=".MirrorActivity" />
         <activity android:name=".wrap.WrapActivity" />
         <activity android:name=".stackoverflowerror.StackOverflowErrorActivity" />
-
+        <activity android:name=".image_base64.ImageBase64Activity" />
 
     </application>
 

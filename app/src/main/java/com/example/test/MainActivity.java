@@ -14,6 +14,7 @@ import com.example.test.exception.ExceptionActivity;
 import com.example.test.gson.GsonActivity;
 import com.example.test.half.HalfActivity;
 import com.example.test.html.HtmlActivity;
+import com.example.test.image_base64.ImageBase64Activity;
 import com.example.test.interfacetest.InterfaceActivity;
 import com.example.test.layout.LayoutActivity;
 import com.example.test.level.ViewLevelActivity;
@@ -398,6 +399,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void onStackOverflowError(View v) {
         startActivity(new Intent(this, StackOverflowErrorActivity.class));
+    }
+
+    /**
+     * android 图片和base64相互转换
+     * @param v
+     */
+    public void onTest2(View v) {
+        startActivity(new Intent(this, ImageBase64Activity.class));
     }
 
 }

@@ -540,7 +540,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_mirror" />
 
-
         <Button
             android:id="@+id/btn_stackoverflowerror"
             android:layout_width="match_parent"
@@ -552,6 +551,18 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_wrap" />
+
+        <Button
+            android:id="@+id/btn_bitmap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="android 图片和base64相互转换"
+            android:onClick="onTest2"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_stackoverflowerror" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
