@@ -74,6 +74,8 @@
         <activity android:name=".wrap.WrapActivity" />
         <activity android:name=".stackoverflowerror.StackOverflowErrorActivity" />
         <activity android:name=".image_base64.ImageBase64Activity" />
+        <activity android:name=".SubActivity" />
+        <activity android:name=".ellipsis.EllipsisActivity" />
 
     </application>
 

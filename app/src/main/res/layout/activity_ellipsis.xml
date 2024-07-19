@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextView显示省略号"/>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="#ff00ff00"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="TextView显示省略号,TextView显示省略号,TextView显示省略号"/>
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="图片转base64"
+        android:textAllCaps="false"
+        android:onClick="onTest1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="base64转图片"
+        android:textAllCaps="false"
+        android:onClick="onTest2" />
+
+</LinearLayout>

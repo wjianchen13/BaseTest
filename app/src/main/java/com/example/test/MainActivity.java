@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.test.choreographer.ChoreographerActivity;
 import com.example.test.clipchildren.ClipChildrenActivity;
 import com.example.test.drawable.CreateDrawableActivity;
+import com.example.test.ellipsis.EllipsisActivity;
 import com.example.test.exception.ExceptionActivity;
 import com.example.test.gson.GsonActivity;
 import com.example.test.half.HalfActivity;
@@ -408,5 +409,22 @@ public class MainActivity extends AppCompatActivity {
     public void onTest2(View v) {
         startActivity(new Intent(this, ImageBase64Activity.class));
     }
+
+    /**
+     * 获取字符串中间的字符串
+     * @param v
+     */
+    public void onTest3(View v) {
+        startActivity(new Intent(this, SubActivity.class));
+    }
+
+    /**
+     * TextView显示省略号
+     * @param v
+     */
+    public void onTest4(View v) {
+        startActivity(new Intent(this, EllipsisActivity.class));
+    }
+
 
 }
