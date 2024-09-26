@@ -344,9 +344,43 @@ public class NormalTestActivity extends AppCompatActivity {
 
 
 
-        System.out.println("======================> time: " + (System.currentTimeMillis() - time));
-        time = System.currentTimeMillis();
+//        System.out.println("======================> time: " + (System.currentTimeMillis() - time));
+//        time = System.currentTimeMillis();
+        long uid = getRealUid2Long("test_200000000");
+        System.out.println("======================> uid: " + uid);
+
     }
+
+    private long getRealUid2Long(String tmUid) {
+        try {
+            String uid = getRealUid2String(tmUid);
+            if (!TextUtils.isEmpty(uid)) {
+                return Long.valueOf(uid);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    private String getRealUid2String(String tmUid) {
+        boolean isTest = true;
+        if(!TextUtils.isEmpty(tmUid)) {
+            if(isTest) {
+                if (tmUid.contains("test_")) {
+                    String uid = tmUid.replace("test_", "");
+                    return uid;
+                }
+            } else {
+                if (tmUid.contains("prod_")) {
+                    String uid = tmUid.replace("prod_", "");
+                    return uid;
+                }
+            }
+        }
+        return tmUid;
+    }
+
     private long time;
 
     /**
