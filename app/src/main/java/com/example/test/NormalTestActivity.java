@@ -47,8 +47,12 @@ public class NormalTestActivity extends AppCompatActivity {
     }
 
     public void onTest1(View v) {
+        List<String> list = new ArrayList<>();
+        list.add("test");
+        list.add(null);
+        list.add("test2");
         // 240321 字符串转颜色
-        tvTest.setBackgroundColor(Color.parseColor("#0000ff"));
+//        tvTest.setBackgroundColor(Color.parseColor("#0000ff"));
 
 
 
