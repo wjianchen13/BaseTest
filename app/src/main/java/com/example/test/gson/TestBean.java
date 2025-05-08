@@ -1,8 +1,6 @@
 package com.example.test.gson;
 
-import android.graphics.drawable.Drawable;
-
-public class UserBean {
+public class TestBean extends BaseBean{
 
     private String name ;
 
@@ -12,9 +10,7 @@ public class UserBean {
 
     private String age;
 
-    private Drawable mDrawable;
-
-    public UserBean() {
+    public TestBean() {
     }
 
     public String getName() {
@@ -48,4 +44,5 @@ public class UserBean {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
