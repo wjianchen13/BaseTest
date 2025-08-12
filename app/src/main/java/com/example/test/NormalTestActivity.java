@@ -43,6 +43,7 @@ public class NormalTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_normal_test);
         tvTest = findViewById(R.id.tv_test);
+        tvTest.setText("")
         
     }
 
